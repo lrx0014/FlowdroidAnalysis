@@ -25,14 +25,17 @@ public class Main {
     public static void main(String[] args) throws Exception {
         initSootOptions();
         ResultSaver saver = new ResultSaver(logPath);
+        Timer timer = new Timer();
 
         Analyzer analyzer = new Analyzer();
         analyzer.setApks(apks);
         analyzer.setApkRootPath(apkRootPath);
         analyzer.setSdkRootPath(sdkRootPath);
         analyzer.setResultSaver(saver);
+        analyzer.setTimer(timer);
 
-        saver.save(" ============== BEGIN ============== ");
+        timer.start();
+        saver.save(String.format(" ============== BEGIN (%d) ============== ", timer.getStartTime()));
         saver.save("JVM Memory Max: " + Runtime.getRuntime().maxMemory() / (1024 * 1024 * 1024));
         saver.save(" ============== Start Analysis with Timeout 60 ============== ");
         analyzer.run(60);
@@ -40,7 +43,7 @@ public class Main {
         analyzer.run(300);
         saver.save(" ============== Start Analysis with Timeout 1200 ============== ");
         analyzer.run(1200);
-        saver.save(" ============== END ============== ");
+        saver.save(String.format(" ============== END (duration: %d) ============== ", timer.duration()));
     }
 
     private static void initSootOptions() {

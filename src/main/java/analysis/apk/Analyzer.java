@@ -18,6 +18,7 @@ public class Analyzer {
 
     private ResultSaver resultSaver;
     private ApkUtils apkUtils;
+    private Timer timer;
 
     public Analyzer() {
         this.apkUtils = new ApkUtils();
@@ -52,6 +53,10 @@ public class Analyzer {
         this.resultSaver = resultSaver;
     }
 
+    public void setTimer(Timer timer) {
+        this.timer = timer;
+    }
+
     public void run(long timeout_sec) throws Exception {
         for (String apk : this.apks) {
             this.runOne(apk, timeout_sec);
@@ -60,7 +65,7 @@ public class Analyzer {
 
     private void runOne(String apk, long timeout_sec) throws Exception {
 
-        this.save("---------------------------------------------------");
+        this.save("---------------------------------------------------------" + timer.duration());
         this.save("Analyzing apk: " + apk + " in " + this.apkRootPath);
         String apkPath = this.apkRootPath + apk;
         String targetSdkVersion = getTargetSdkVersion(apkPath);
@@ -89,7 +94,7 @@ public class Analyzer {
             i.getAndIncrement();
         });
 
-        this.save("---------------------------------------------------");
+        this.save("---------------------------------------------------------" + timer.duration());
         this.save("");
     }
 
