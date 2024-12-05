@@ -6,6 +6,7 @@ import soot.jimple.infoflow.results.InfoflowResults;
 
 import java.io.File;
 import java.util.Objects;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Analyzer {
     // APKs to be analyzed
@@ -59,10 +60,12 @@ public class Analyzer {
 
     private void runOne(String apk, long timeout_sec) throws Exception {
 
-        System.out.println("[Analyzer] Analyzing apk: " + apk + " in " + this.apkRootPath);
+        this.save("---------------------------------------------------");
+        this.save("Analyzing apk: " + apk + " in " + this.apkRootPath);
         String apkPath = this.apkRootPath + apk;
         String targetSdkVersion = getTargetSdkVersion(apkPath);
-        System.out.println("Target SDK Version: " + targetSdkVersion);
+        this.save("Target SDK Version: " + targetSdkVersion);
+        this.save("");
 
         InfoflowAndroidConfiguration config = new InfoflowAndroidConfiguration();
         config.getAnalysisFileConfig().setAndroidPlatformDir(new File(getPlatformJarPath(targetSdkVersion)));
@@ -75,14 +78,19 @@ public class Analyzer {
         InfoflowResults results = app.runInfoflow();
 
         if (results.getResults() == null || results.getResults().isEmpty()) {
-            System.out.println("[No results found.]");
+            this.save("[No results found.]");
             return;
         }
 
+        AtomicInteger i = new AtomicInteger(1);
         results.getResults().forEach((res) -> {
-            this.save("Source: " + res.getO2().toString());
-            this.save("Sinks: " + res.getO1().toString());
+            this.save(String.format("[%d] Source: %s", i.get(), res.getO2().toString()));
+            this.save(String.format("[%d] Sink: %s", i.get(), res.getO1().toString()));
+            i.getAndIncrement();
         });
+
+        this.save("---------------------------------------------------");
+        this.save("");
     }
 
     private void save(String row) {
