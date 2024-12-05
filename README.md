@@ -8,4 +8,5 @@ https://github.com/JordanSamhi/Android-platforms
 In Main.java, modify the variables:
 - **apkRootPath & apks**: the path storing those apk files need to be analyzed
 - **sdkRootPath**: path to your android sdk platform
-  Build and Run Main function to start analysis
+  
+Build and Run Main function to start analysis
