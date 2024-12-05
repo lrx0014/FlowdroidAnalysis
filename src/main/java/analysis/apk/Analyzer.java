@@ -5,6 +5,9 @@ import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.infoflow.results.InfoflowResults;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -75,7 +78,7 @@ public class Analyzer {
         InfoflowAndroidConfiguration config = new InfoflowAndroidConfiguration();
         config.getAnalysisFileConfig().setAndroidPlatformDir(new File(getPlatformJarPath(targetSdkVersion)));
         config.getAnalysisFileConfig().setTargetAPKFile(new File(apkPath));
-        config.getAnalysisFileConfig().setSourceSinkFile(new File(getSourceSinkFilePath()));
+        config.getAnalysisFileConfig().setSourceSinkFile(getSourcesAndSinksConfig());
         // timeout (seconds)
         config.setDataFlowTimeout(timeout_sec);
 
@@ -106,5 +109,25 @@ public class Analyzer {
         String logT = "[Analyzer] " + row;
         System.out.println(logT);
         this.resultSaver.save(row);
+    }
+
+    private File getSourcesAndSinksConfig() throws IOException {
+        InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("SourcesAndSinks.txt");
+        if (inputStream == null) {
+            throw new IllegalArgumentException("Resource not found: " + "SourcesAndSinks.txt");
+        }
+
+        File tempFile = File.createTempFile("SourcesAndSinks", ".txt");
+        tempFile.deleteOnExit();
+
+        try (FileOutputStream outputStream = new FileOutputStream(tempFile)) {
+            byte[] buffer = new byte[1024];
+            int bytesRead;
+            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                outputStream.write(buffer, 0, bytesRead);
+            }
+        }
+
+        return tempFile;
     }
 }

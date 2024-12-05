@@ -3,7 +3,7 @@ import soot.options.Options;
 
 public class Main {
     // Specify root path for APK files
-    private static final String apkRootPath = "/home/ryan/Downloads/APKs/";
+    private static String apkRootPath;
     // APKs to be analyzed
     private static final String[] apks = {
             "com.delhi.metro.dtc.apk",
@@ -18,11 +18,12 @@ public class Main {
             "nz.co.stuff.android.news.apk"
     };
     // Specify root path for SDK
-    private static final String sdkRootPath = "/home/ryan/WorkSpace/github/Android-platforms/jars/stubs/";
+    private static String sdkRootPath;
     // Results save path
     private static final String logPath = "output/results.txt";
 
     public static void main(String[] args) throws Exception {
+        parseArgs(args);
         initSootOptions();
         ResultSaver saver = new ResultSaver(logPath);
         Timer timer = new Timer();
@@ -49,5 +50,15 @@ public class Main {
     private static void initSootOptions() {
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_ignore_resolution_errors(true);
+    }
+
+    private static void parseArgs(String[] args) {
+        for (String arg : args) {
+            if (arg.startsWith("--sdk_root_path=")) {
+                sdkRootPath = arg.substring("--sdk_root_path=".length());
+            } else if (arg.startsWith("--apk_root_path=")) {
+                apkRootPath = arg.substring("--apk_root_path=".length());
+            }
+        }
     }
 }
