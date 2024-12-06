@@ -5,11 +5,13 @@ https://github.com/JordanSamhi/Android-platforms
 
 
 ### How-to
-In Main.java, modify the variables:
-- **apkRootPath & apks**: the path storing those apk files need to be analyzed
-- **sdkRootPath**: path to your android sdk platform
-  
-Build and Run Main function to start analysis
+Build the project as .jar or Run Main function to start analysis,
+
+following parameters are required:
+```shell
+java -Xmx30G -jar FlowdroidAnalysis.jar --sdk_root_path=/app/Android-platforms/jars/stubs/ --apk_root_path=/app/APKs/
+```
+replace the two path with yours.
 
 
 ### Results
