@@ -1,0 +1,680 @@
+ ============== BEGIN (1733427674) ============== 
+JVM Memory Max: 55
+ ============== Start Analysis with Timeout 60 ============== 
+---------------------------------------------------------0
+Analyzing apk: com.delhi.metro.dtc.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 19
+
+[No results found.]
+---------------------------------------------------------8
+Analyzing apk: com.hawaiianairlines.app.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 30
+
+[1] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[1] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_TARGET_ID", $r3)
+[2] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[2] Sink: virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("ORIGINAL_LOCAL_URI_PATH", $r7)
+[3] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[3] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_ID", $r3)
+[4] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[4] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[5] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[5] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[6] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[6] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[7] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[7] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[8] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[8] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_TARGET_ID", $r3)
+[9] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[9] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_ID", $r3)
+[10] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[10] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[11] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[11] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[12] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[12] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[13] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[13] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[14] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[14] Sink: virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("THUMBNAIL_LOCAL_URI_PATH", $r7)
+---------------------------------------------------------270
+
+---------------------------------------------------------270
+Analyzing apk: com.imo.android.imoim.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 31
+
+[1] Source: $r49 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[1] Sink: $r49 = virtualinvoke $r49.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("-", "")
+[2] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[2] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r7)
+[3] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[3] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r7)
+[4] Source: $r1 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[4] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[5] Source: $r7 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>()
+[5] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[6] Source: $r9 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[6] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[7] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>()
+[7] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[8] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>()
+[8] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[9] Source: $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[9] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[10] Source: $r7 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>()
+[10] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[11] Source: $r13 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r2, $r5, $r11, "_id")
+[11] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[12] Source: $r5 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)>($r7, $r0, $r1, $r2, $r3, $r9)
+[12] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[13] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[13] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[14] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>()
+[14] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[15] Source: $r18 = virtualinvoke $r17.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r6, $r2, null, "times_contacted DESC, display_name")
+[15] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[16] Source: $r7 = interfaceinvoke $r6.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[16] Sink: $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1)
+[17] Source: $r6 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[17] Sink: $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1)
+[18] Source: $r1 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[18] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[19] Source: $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[19] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[20] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[20] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[21] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[21] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("icon", $r4)
+[22] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[22] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("icon", $r4)
+[23] Source: $r15 = interfaceinvoke $r29.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[23] Sink: virtualinvoke $r10.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r5)
+---------------------------------------------------------3168
+
+---------------------------------------------------------3168
+Analyzing apk: com.tado.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 23
+
+[1] Source: $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+[1] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[2] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+[2] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[3] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+[3] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[4] Source: $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+[4] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[5] Source: $r6 = virtualinvoke $r14.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[5] Sink: interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1)
+[6] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+[6] Sink: $r1 = virtualinvoke r0.<com.tado.android.location.LocationPostService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(null, $r21)
+[7] Source: $r7 = virtualinvoke $r11.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[7] Sink: $r1 = virtualinvoke r0.<com.tado.android.location.LocationPostService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(null, $r21)
+[8] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+[8] Sink: $r1 = virtualinvoke r0.<com.tado.android.location.LocationPostService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(null, $r21)
+[9] Source: $r3 = virtualinvoke $r2.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[9] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\"", "")
+[10] Source: $r7 = virtualinvoke r6.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[10] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\"", "")
+[11] Source: $r5 = virtualinvoke $r4.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[11] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\"", "")
+---------------------------------------------------------3213
+
+---------------------------------------------------------3213
+Analyzing apk: com.walkme.azores.new.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 33
+
+[1] Source: $r15 = interfaceinvoke $r30.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[1] Sink: virtualinvoke $r9.<android.os.BaseBundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r4)
+---------------------------------------------------------5713
+
+---------------------------------------------------------5713
+Analyzing apk: com.wooxhome.smart.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 31
+
+[1] Source: $r6 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[1] Sink: virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>($r0, $r1)
+[2] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[2] Sink: virtualinvoke $r8.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r3)
+---------------------------------------------------------9081
+
+---------------------------------------------------------9081
+Analyzing apk: com.yourdelivery.pyszne.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 21
+
+[No results found.]
+---------------------------------------------------------9155
+Analyzing apk: linko.home.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 30
+
+[1] Source: $r6 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[1] Sink: virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>($r0, $r1)
+[2] Source: $r10 = interfaceinvoke $r13.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[2] Sink: virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r2)
+[3] Source: $r2 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[3] Sink: virtualinvoke $r9.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r3)
+[4] Source: $r6 = virtualinvoke $r5.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[4] Sink: virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("android:support:next_request_index", $i1)
+---------------------------------------------------------11072
+
+---------------------------------------------------------11072
+Analyzing apk: mynt.app.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 33
+
+[1] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[1] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r10)
+[2] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[2] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[3] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[3] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r2)
+[4] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[4] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r1)
+[5] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[5] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r2)
+[6] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[6] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r3)
+[7] Source: $r9 = virtualinvoke $r8.<java.io.File: java.io.File getCanonicalFile()>()
+[7] Sink: $z0 = virtualinvoke $r5.<java.io.File: boolean delete()>()
+[8] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[8] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[9] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[9] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(0, $r1)
+[10] Source: $r47 = interfaceinvoke $r58.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[10] Sink: virtualinvoke $r7.<android.os.BaseBundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r1)
+[11] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[11] Sink: virtualinvoke r0.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)
+[12] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[12] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r2)
+[13] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[13] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>($i0, $r1)
+---------------------------------------------------------11916
+
+---------------------------------------------------------11916
+Analyzing apk: nz.co.stuff.android.news.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 23
+
+[1] Source: $r7 = interfaceinvoke $r6.<android.database.Cursor: java.lang.String getString(int)>(1)
+[1] Sink: r1 = virtualinvoke $r9.<java.lang.String: java.lang.String replaceFirst(java.lang.String,java.lang.String)>(r1, $r8)
+---------------------------------------------------------11969
+
+ ============== Start Analysis with Timeout 300 ============== 
+---------------------------------------------------------11969
+Analyzing apk: com.delhi.metro.dtc.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 19
+
+[No results found.]
+---------------------------------------------------------11974
+Analyzing apk: com.hawaiianairlines.app.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 30
+
+[1] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[1] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[2] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[2] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[3] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[3] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[4] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[4] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[5] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[5] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_TARGET_ID", $r3)
+[6] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[6] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[7] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[7] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[8] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[8] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[9] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[9] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[10] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[10] Sink: virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("ORIGINAL_LOCAL_URI_PATH", $r7)
+[11] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[11] Sink: virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("THUMBNAIL_LOCAL_URI_PATH", $r7)
+[12] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[12] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_ID", $r3)
+[13] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[13] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_TARGET_ID", $r3)
+[14] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[14] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_ID", $r3)
+---------------------------------------------------------12262
+
+---------------------------------------------------------12262
+Analyzing apk: com.imo.android.imoim.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 31
+
+[1] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[1] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("icon", $r4)
+[2] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[2] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("icon", $r4)
+[3] Source: $r49 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[3] Sink: $r49 = virtualinvoke $r49.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("-", "")
+[4] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[4] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("ngc/", "")
+[5] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[5] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("ngc/", "")
+[6] Source: $r1 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[6] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("ngc/", "")
+[7] Source: $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[7] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[8] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[8] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[9] Source: $r13 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r2, $r5, $r11, "_id")
+[9] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[10] Source: $r1 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[10] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[11] Source: $r7 = interfaceinvoke $r6.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[11] Sink: $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1)
+[12] Source: $r6 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[12] Sink: $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1)
+[13] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[13] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("imo/", "")
+[14] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[14] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("imo/", "")
+[15] Source: $r1 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[15] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("imo/", "")
+[16] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[16] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("buid", $r6)
+[17] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[17] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("buid", $r6)
+[18] Source: $r18 = virtualinvoke $r17.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r6, $r2, null, "times_contacted DESC, display_name")
+[18] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[19] Source: $r9 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[19] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[20] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>()
+[20] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[21] Source: $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[21] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[22] Source: $r7 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>()
+[22] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[23] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>()
+[23] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[24] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[24] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[25] Source: $r13 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r2, $r5, $r11, "_id")
+[25] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[26] Source: $r7 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>()
+[26] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[27] Source: $r5 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)>($r7, $r0, $r1, $r2, $r3, $r9)
+[27] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[28] Source: $r1 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[28] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[29] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>()
+[29] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[30] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[30] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r7)
+[31] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[31] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r7)
+[32] Source: $r15 = interfaceinvoke $r29.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[32] Sink: virtualinvoke $r10.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r5)
+---------------------------------------------------------15784
+
+---------------------------------------------------------15784
+Analyzing apk: com.tado.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 23
+
+[1] Source: $r7 = virtualinvoke $r11.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[1] Sink: $r1 = virtualinvoke r0.<com.tado.android.location.LocationPostService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(null, $r21)
+[2] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+[2] Sink: $r1 = virtualinvoke r0.<com.tado.android.location.LocationPostService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(null, $r21)
+[3] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+[3] Sink: $r1 = virtualinvoke r0.<com.tado.android.location.LocationPostService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(null, $r21)
+[4] Source: $r5 = virtualinvoke $r4.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[4] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\"", "")
+[5] Source: $r3 = virtualinvoke $r2.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[5] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\"", "")
+[6] Source: $r7 = virtualinvoke r6.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[6] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\"", "")
+[7] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+[7] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[8] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+[8] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[9] Source: $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+[9] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[10] Source: $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+[10] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[11] Source: $r6 = virtualinvoke $r14.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[11] Sink: interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1)
+---------------------------------------------------------15835
+
+---------------------------------------------------------15835
+Analyzing apk: com.walkme.azores.new.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 33
+
+[1] Source: $r15 = interfaceinvoke $r30.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[1] Sink: virtualinvoke $r9.<android.os.BaseBundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r4)
+---------------------------------------------------------18744
+
+---------------------------------------------------------18744
+Analyzing apk: com.wooxhome.smart.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 31
+
+[1] Source: $r6 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[1] Sink: virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>($r0, $r1)
+[2] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[2] Sink: virtualinvoke $r8.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r3)
+---------------------------------------------------------22293
+
+---------------------------------------------------------22293
+Analyzing apk: com.yourdelivery.pyszne.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 21
+
+[No results found.]
+---------------------------------------------------------22350
+Analyzing apk: linko.home.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 30
+
+[1] Source: $r10 = interfaceinvoke $r13.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[1] Sink: virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r2)
+[2] Source: $r6 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[2] Sink: virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>($r0, $r1)
+[3] Source: $r2 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[3] Sink: virtualinvoke $r4.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r3)
+[4] Source: $r6 = virtualinvoke $r5.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[4] Sink: virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("android:support:next_request_index", $i1)
+[5] Source: $r2 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[5] Sink: virtualinvoke $r9.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r3)
+---------------------------------------------------------24974
+
+---------------------------------------------------------24974
+Analyzing apk: mynt.app.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 33
+
+[1] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[1] Sink: virtualinvoke r0.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)
+[2] Source: $r9 = virtualinvoke $r8.<java.io.File: java.io.File getCanonicalFile()>()
+[2] Sink: $z0 = virtualinvoke $r5.<java.io.File: boolean delete()>()
+[3] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[3] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r1)
+[4] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[4] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[5] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[5] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r2)
+[6] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[6] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[7] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[7] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r2)
+[8] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[8] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r10)
+[9] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[9] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(0, $r1)
+[10] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[10] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[11] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[11] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r2)
+[12] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[12] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>($i0, $r1)
+[13] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[13] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r3)
+[14] Source: $r47 = interfaceinvoke $r58.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[14] Sink: virtualinvoke $r7.<android.os.BaseBundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r1)
+[15] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[15] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+---------------------------------------------------------26176
+
+---------------------------------------------------------26176
+Analyzing apk: nz.co.stuff.android.news.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 23
+
+[1] Source: $r7 = interfaceinvoke $r6.<android.database.Cursor: java.lang.String getString(int)>(1)
+[1] Sink: r1 = virtualinvoke $r9.<java.lang.String: java.lang.String replaceFirst(java.lang.String,java.lang.String)>(r1, $r8)
+---------------------------------------------------------26250
+
+ ============== Start Analysis with Timeout 1200 ============== 
+---------------------------------------------------------26250
+Analyzing apk: com.delhi.metro.dtc.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 19
+
+[No results found.]
+---------------------------------------------------------26255
+Analyzing apk: com.hawaiianairlines.app.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 30
+
+[1] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[1] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_ID", $r3)
+[2] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[2] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[3] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[3] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[4] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[4] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[5] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[5] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[6] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[6] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[7] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[7] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[8] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[8] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_TARGET_ID", $r3)
+[9] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[9] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_TARGET_ID", $r3)
+[10] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[10] Sink: virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("ORIGINAL_LOCAL_URI_PATH", $r7)
+[11] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[11] Sink: virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("THUMBNAIL_LOCAL_URI_PATH", $r7)
+[12] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[12] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[13] Source: $r1 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>()
+[13] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[14] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[14] Sink: virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("CONVERSATION_ID", $r3)
+---------------------------------------------------------26553
+
+---------------------------------------------------------26553
+Analyzing apk: com.imo.android.imoim.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 31
+
+[1] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[1] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("buid", $r6)
+[2] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[2] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("buid", $r6)
+[3] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[3] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("imo/", "")
+[4] Source: $r1 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[4] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("imo/", "")
+[5] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[5] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("imo/", "")
+[6] Source: $r49 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[6] Sink: $r49 = virtualinvoke $r49.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("-", "")
+[7] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>()
+[7] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[8] Source: $r1 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[8] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[9] Source: $r7 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>()
+[9] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[10] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>()
+[10] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[11] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[11] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[12] Source: $r13 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r2, $r5, $r11, "_id")
+[12] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[13] Source: $r18 = virtualinvoke $r17.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r6, $r2, null, "times_contacted DESC, display_name")
+[13] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[14] Source: $r5 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)>($r7, $r0, $r1, $r2, $r3, $r9)
+[14] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[15] Source: $r7 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>()
+[15] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[16] Source: $r9 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[16] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[17] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>()
+[17] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[18] Source: $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[18] Sink: virtualinvoke r0.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r1)
+[19] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[19] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r7)
+[20] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[20] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r7)
+[21] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[21] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("icon", $r4)
+[22] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[22] Sink: virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("icon", $r4)
+[23] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[23] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("ngc/", "")
+[24] Source: $r1 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[24] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("ngc/", "")
+[25] Source: $r1 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[25] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("ngc/", "")
+[26] Source: $r7 = interfaceinvoke $r6.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[26] Sink: $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1)
+[27] Source: $r6 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[27] Sink: $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1)
+[28] Source: $r15 = interfaceinvoke $r29.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[28] Sink: virtualinvoke $r10.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r5)
+[29] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>()
+[29] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[30] Source: $r1 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[30] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[31] Source: $r7 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>()
+[31] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[32] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>()
+[32] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[33] Source: $r1 = interfaceinvoke $r2.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[33] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[34] Source: $r13 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r2, $r5, $r11, "_id")
+[34] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[35] Source: $r18 = virtualinvoke $r17.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r6, $r2, null, "times_contacted DESC, display_name")
+[35] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[36] Source: $r5 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)>($r7, $r0, $r1, $r2, $r3, $r9)
+[36] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[37] Source: $r7 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>()
+[37] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[38] Source: $r9 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[38] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[39] Source: $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>()
+[39] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+[40] Source: $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[40] Sink: virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)
+---------------------------------------------------------31807
+
+---------------------------------------------------------31807
+Analyzing apk: com.tado.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 23
+
+[1] Source: $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+[1] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[2] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+[2] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[3] Source: $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+[3] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[4] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+[4] Sink: interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+[5] Source: $r6 = virtualinvoke $r14.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[5] Sink: interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1)
+[6] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+[6] Sink: $r1 = virtualinvoke r0.<com.tado.android.location.LocationPostService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(null, $r21)
+[7] Source: $r7 = virtualinvoke $r11.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[7] Sink: $r1 = virtualinvoke r0.<com.tado.android.location.LocationPostService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(null, $r21)
+[8] Source: $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+[8] Sink: $r1 = virtualinvoke r0.<com.tado.android.location.LocationPostService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(null, $r21)
+[9] Source: $r3 = virtualinvoke $r2.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[9] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\"", "")
+[10] Source: $r7 = virtualinvoke r6.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[10] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\"", "")
+[11] Source: $r5 = virtualinvoke $r4.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[11] Sink: $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\"", "")
+---------------------------------------------------------31875
+
+---------------------------------------------------------31875
+Analyzing apk: com.walkme.azores.new.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 33
+
+[1] Source: $r15 = interfaceinvoke $r30.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[1] Sink: virtualinvoke $r9.<android.os.BaseBundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r4)
+---------------------------------------------------------34305
+
+---------------------------------------------------------34305
+Analyzing apk: com.wooxhome.smart.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 31
+
+[1] Source: $r6 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[1] Sink: virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>($r0, $r1)
+[2] Source: $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[2] Sink: virtualinvoke $r8.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r3)
+---------------------------------------------------------37924
+
+---------------------------------------------------------37924
+Analyzing apk: com.yourdelivery.pyszne.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 21
+
+[No results found.]
+---------------------------------------------------------38037
+Analyzing apk: linko.home.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 30
+
+[1] Source: $r10 = interfaceinvoke $r13.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[1] Sink: virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r2)
+[2] Source: $r6 = virtualinvoke $r5.<android.net.wifi.WifiInfo: java.lang.String getSSID()>()
+[2] Sink: virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("android:support:next_request_index", $i1)
+[3] Source: $r6 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[3] Sink: virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>($r0, $r1)
+[4] Source: $r2 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[4] Sink: virtualinvoke $r9.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r3)
+[5] Source: $r2 = interfaceinvoke $r0.<android.database.Cursor: java.lang.String getString(int)>($i0)
+[5] Sink: virtualinvoke $r4.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r3)
+---------------------------------------------------------40782
+
+---------------------------------------------------------40782
+Analyzing apk: mynt.app.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 33
+
+[1] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[1] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[2] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[2] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r1)
+[3] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[3] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[4] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[4] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r3)
+[5] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[5] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[6] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[6] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[7] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[7] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[8] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[8] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>($i0, $r1)
+[9] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[9] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[10] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[10] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r10)
+[11] Source: $r9 = virtualinvoke $r8.<java.io.File: java.io.File getCanonicalFile()>()
+[11] Sink: $z0 = virtualinvoke $r5.<java.io.File: boolean delete()>()
+[12] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[12] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[13] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[13] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(0, $r1)
+[14] Source: $r47 = interfaceinvoke $r58.<android.database.Cursor: java.lang.String getString(int)>($i4)
+[14] Sink: virtualinvoke $r7.<android.os.BaseBundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r1)
+[15] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[15] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[16] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[16] Sink: $z0 = virtualinvoke $r8.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r7, r0, 33)
+[17] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[17] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[18] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[18] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[19] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[19] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[20] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[20] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r2)
+[21] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[21] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+[22] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[22] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null)
+[23] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[23] Sink: virtualinvoke r0.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)
+[24] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[24] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r2)
+[25] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[25] Sink: virtualinvoke r0.<android.app.Activity: void setResult(int,android.content.Intent)>(-1, $r2)
+[26] Source: $r7 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>()
+[26] Sink: virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0)
+---------------------------------------------------------42512
+
+---------------------------------------------------------42512
+Analyzing apk: nz.co.stuff.android.news.apk in /home/ryan/Downloads/APKs/
+Target SDK Version: 23
+
+[1] Source: $r7 = interfaceinvoke $r6.<android.database.Cursor: java.lang.String getString(int)>(1)
+[1] Sink: r1 = virtualinvoke $r9.<java.lang.String: java.lang.String replaceFirst(java.lang.String,java.lang.String)>(r1, $r8)
+---------------------------------------------------------42603
+
+ ============== END (duration: 42603) ============== 
